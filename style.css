@@ -1507,16 +1507,16 @@ position: absolute;
         }
 
         .skills-box {
-            width: 250px;
+            width: auto;
             height: auto;
             line-height: 50px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             border-radius: 20px;
-            background: linear-gradient(to right, #4f311200, #5c400d00, #f1c69b00);
-            transition: background 10s ease, border 0.2s ease-in-out, border-radius 1.8s ease-in-out, ;
-            border: 1px solid #292929;
+            /* background: linear-gradient(to right, #4f311200, #5c400d00, #f1c69b00); */
+            /* transition: background 10s ease, border 0.2s ease-in-out, border-radius 1.8s ease-in-out, ; */
+            /* border: 1px solid #292929; */
         }
 
         .bottom {
@@ -1739,6 +1739,7 @@ position: absolute;
 
         .contact-right-cont {
             align-items: center;
+            text-align: center;
             margin-left: 0px;
             margin-top: 67px;
         }
