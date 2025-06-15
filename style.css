@@ -1630,6 +1630,11 @@ position: absolute;
             padding-left: 15px;
             box-sizing: border-box;
             justify-content: center;
+             display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
         }
 
         .about-intro p {
