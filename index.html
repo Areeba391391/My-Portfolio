@@ -29,14 +29,12 @@
             <!-- <div class="inner-nav"> -->
 
             <div class="left-nav">
-                <img src="images-removebg-preview.png" alt="" data-aos="zoom-in-up" data-aos-duration="1500">
+                  <img src="images-removebg-preview.png" alt="" data-aos="zoom-in-up" data-aos-duration="1500">
 
-                <p class="hover-3" data-aos="zoom-in-up" data-aos-duration="1500"><span>Ar</span>ee<span>ba</span>
-                    Al<span>i</span></p>
-
+                <p class="hover-3" data-aos="zoom-in-up" data-aos-duration="1500">Areeba Ali</p>
             </div>
-            <div class="right-nav">
-                <ul>
+            <div class="right-nav" >
+                <ul >
                     <li class="hover-3" data-aos="zoom-in-up" data-aos-duration="1500">
                         <a href="index.html">Home</a>
                     </li>
@@ -52,6 +50,10 @@
                     <li class="hover-3" data-aos="zoom-in-up" data-aos-duration="1500">
                         <a href="#con">Contact</a>
                     </li>
+                    <!-- <li id="theme-toggle" style="cursor: pointer; font-size: 20px; padding-left: 15px;">
+  <i class="fas fa-moon"></i>
+</li> -->
+
                 </ul>
 
             </div>
@@ -430,6 +432,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/all.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = toggleBtn.querySelector('i');
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+
+      if (document.body.classList.contains('light-theme')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        // Remove particles
+        const particlesCanvas = document.querySelector("#tsparticles canvas");
+        if (particlesCanvas) particlesCanvas.remove();
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        // Reload particles (optional, only if you want)
+        if (typeof loadParticles === 'function') loadParticles();
+      }
+    });
+  });
+</script> -->
+
+
+
 
     <script>
 
@@ -488,35 +516,37 @@
         });
 
     </script>
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const screenWidth = window.innerWidth;
 
-    const footer = document.querySelector("footer");
 
-    // ✅ REMOVE AOS from footer for screens smaller than 1024px
-    if (screenWidth < 1024) {
-      if (footer?.hasAttribute("data-aos")) {
-        footer.removeAttribute("data-aos");
-        footer.style.opacity = "1";
-        footer.style.transform = "none";
-      }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const screenWidth = window.innerWidth;
 
-      // Also remove AOS from inner elements inside footer
-      footer?.querySelectorAll("[data-aos]").forEach(el => {
-        el.removeAttribute("data-aos");
-        el.style.opacity = "1";
-        el.style.transform = "none";
-      });
-    }
+            const footer = document.querySelector("footer");
 
-    // ✅ Initialize AOS for everything else
-    AOS.init({
-      once: true,
-      duration: 1200
-    });
-  });
-</script>
+            // ✅ REMOVE AOS from footer for screens smaller than 1024px
+            if (screenWidth < 1024) {
+                if (footer?.hasAttribute("data-aos")) {
+                    footer.removeAttribute("data-aos");
+                    footer.style.opacity = "1";
+                    footer.style.transform = "none";
+                }
+
+                // Also remove AOS from inner elements inside footer
+                footer?.querySelectorAll("[data-aos]").forEach(el => {
+                    el.removeAttribute("data-aos");
+                    el.style.opacity = "1";
+                    el.style.transform = "none";
+                });
+            }
+
+            // ✅ Initialize AOS for everything else
+            AOS.init({
+                once: true,
+                duration: 1200
+            });
+        });
+    </script>
 
 
 
